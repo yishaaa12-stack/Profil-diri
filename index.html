@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Data Diri - Cindya Putri Zahrotu Sylfa</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background: linear-gradient(135deg, #ff9ecf, #ffc7e8, #ffdff2);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:30px;
+        }
+
+        .card{
+            width:900px;
+            max-width:100%;
+            background:rgba(255,255,255,0.95);
+            border-radius:30px;
+            overflow:hidden;
+            box-shadow:0 15px 35px rgba(255,105,180,0.3);
+            animation: muncul 1s ease;
+        }
+
+        @keyframes muncul{
+            from{
+                opacity:0;
+                transform:translateY(30px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        .header{
+            background:linear-gradient(135deg,#ff69b4,#ff85c1);
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        .header h1{
+            font-size:35px;
+            margin-bottom:10px;
+        }
+
+        .header p{
+            font-size:18px;
+        }
+
+        .content{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            padding:40px;
+            gap:30px;
+        }
+
+        .foto{
+            flex:1;
+            min-width:250px;
+            text-align:center;
+        }
+
+        .foto img{
+            width:250px;
+            height:250px;
+            object-fit:cover;
+            border-radius:50%;
+            border:8px solid #ff8cc6;
+            box-shadow:0 10px 25px rgba(255,105,180,0.3);
+        }
+
+        .info{
+            flex:2;
+            min-width:280px;
+        }
+
+        .info h2{
+            color:#ff4fa0;
+            margin-bottom:20px;
+        }
+
+        .data{
+            margin-bottom:15px;
+            padding:12px 15px;
+            background:#fff1f8;
+            border-left:5px solid #ff69b4;
+            border-radius:10px;
+        }
+
+        .data strong{
+            color:#d63384;
+        }
+
+        .cita{
+            margin-top:20px;
+            background:linear-gradient(135deg,#ffb6d9,#ffe0f0);
+            padding:20px;
+            border-radius:15px;
+        }
+
+        .cita h3{
+            color:#c2185b;
+            margin-bottom:10px;
+        }
+
+        .footer{
+            text-align:center;
+            padding:20px;
+            background:#fff1f8;
+            color:#d63384;
+            font-weight:600;
+        }
+
+        .love{
+            color:red;
+        }
+
+        @media(max-width:768px){
+            .content{
+                flex-direction:column;
+            }
+
+            .header h1{
+                font-size:28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="header">
+            <h1>🌸 Profil Data Diri 🌸</h1>
+            <p>SMKS Kesehatan Yannas Husada Bangkalan</p>
+        </div>
+
+        <div class="content">
+
+            <div class="foto">
+                <!-- Ganti foto.jpg dengan foto milikmu -->
+                <img src="foto.jpg" alt="Foto Profil">
+            </div>
+
+            <div class="info">
+
+                <h2>✨ Tentang Saya</h2>
+
+                <div class="data">
+                    <strong>Nama:</strong> Cindya Putri Zahrotu Sylfa
+                </div>
+
+                <div class="data">
+                    <strong>Sekolah:</strong> SMKS Kesehatan Yannas Husada Bangkalan
+                </div>
+
+                <div class="data">
+                    <strong>Kelas:</strong> XB Farmasi
+                </div>
+
+                <div class="data">
+                    <strong>Hobi:</strong> 🏊 Renang dan 🚶 Jalan-jalan
+                </div>
+
+                <div class="cita">
+                    <h3>🎓 Cita-cita</h3>
+                    <p>
+                        Saya memiliki cita-cita menjadi seorang
+                        <b>Apoteker</b> yang profesional, berkompeten,
+                        dan dapat membantu masyarakat dalam bidang
+                        kesehatan serta penggunaan obat yang tepat.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Dibuat dengan <span class="love">❤</span> oleh
+            <b>Cindya Putri Zahrotu Sylfa</b>
+        </div>
+
+    </div>
+
+</body>
+</html>
